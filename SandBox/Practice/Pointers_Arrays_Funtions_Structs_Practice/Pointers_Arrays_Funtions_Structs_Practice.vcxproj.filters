@@ -18,5 +18,8 @@
     <ClCompile Include="pointer_structs_practice.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="namespacePractice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
