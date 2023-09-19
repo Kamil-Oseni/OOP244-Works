@@ -1,0 +1,39 @@
+//Name: Oluwaseun Kamil Oseni 
+//Email: ooseni2@myseneca.ca
+//ID: 168216216
+//Date: 9/16/2023
+
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+
+
+TOPICS I LEARNED IN COMPLETING THIS WORKSHOP
+-------------------------------------------
+* File Manipulation (Closing a file to avoid memory leak. Rewinding a file, Opening and reading a file)
+* Modular Programming
+* String and substring comparison
+
+
+* File Manipulation
+	I learned that in order to open a file I have to create the file pointer "FILE* fptr = fopen(fileName, "r");" and the "r" indicates that I will be reading from the file, if i were to be writing, I'd use "w".
+	I learned that the rewind function helps to reposition the file pointer to the beginning of the file.
+	I also learned that I need to close the file after manipulation to avoid memory leak.
+
+* Modular Programming
+	After doing this workshop, I understand the need to have separate files that work together, it helped structure my code, organized it and made it easier to read, understand and comment on.
+	It also made debuging and testing my code easier.
+	Because of modular programming, cStrTools was easy to reuse without rewriting the code.
+
+* String and Substring Comparison
+	I learned how to how to check if a string is a substring of another string by using the already created function.
+
+
+
+
+
+ISSUES THAT CAUSED DIFFICULTIES
+-------------------------------
+* At first i used a struct and passed integer data types for the number and prefix, so in my output for numbers starting with a zero the compiler ignored the zero, i.e compiler was printing "630" rather than "0630".
+and to fix this, i changed all integer types to char data types.
+
+* Another issue I had was I was getting a memory leak in the matrix compiler because I forgot to close the file.
