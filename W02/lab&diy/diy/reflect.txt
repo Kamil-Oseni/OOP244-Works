@@ -1,0 +1,25 @@
+//Name: Oluwaseun Kamil Oseni 
+//Email: ooseni2@myseneca.ca
+//ID: 168216216
+//Date: 9/25/2023
+
+//I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+
+
+This was a very very very draining workshop, I hope it even passes the matrix submission (fingers crossed).
+
+Here is how my logic process went for this workshop:
+
+Part 1 was quite easy, and I started with the Force being with me like from last week (Star Wars reference). 
+While reading the instructions and writing out my pseudocode, I thought it would be interesting to use a class in place of the struct like we learned in class,
+but after going through the instructions, and just like Bart Simpson said "There's only one thing to do at a moment like this: Strut!" (Struct).
+
+Other than having issues with the load function, things i learned and utilized were:
+
+1. Using Extern - I asked a question in class about using Extern and while doing the workshop, I had a problem with a memory leak, I remembered and implemented Extern.
+
+2. Dynamic Memory Allocation- I've learned how to use dynamic memory allocation to generate arrays using the new operator, and that dynamic memory allocation is managed 
+	by the operating system and occurs at runtime rather than at compile time.
+
+3. Also the use of function overloading made my work easier and like my profeessor says "it's a beautiful thing".
+
