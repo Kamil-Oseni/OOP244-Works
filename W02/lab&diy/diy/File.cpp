@@ -38,27 +38,32 @@ namespace sdds {
     }
 
     // Function to read a string from the file
-    bool read(char*& name) {
-        char temp[128];
-        if (fscanf(fptr, "%127[^\n]\n", temp) == 1) {
-            name = new char[strlen(temp) + 1];
-            strcpy(name, temp);
-            return true;
-        }
-        return false;
-    }
+    
 
     // Function to read an integer from the file
-    bool read(int& empNo) {
-        if (fscanf(fptr, "%d,", &empNo) == 1) {
+    bool read(int& population) {
+        if (fscanf(fptr, "%d,", &population) == 1) {
             return true;
         }
         return false;
     }
 
-    // Function to read a double from the file
-    bool read(double& salary) {
-        if (fscanf(fptr, "%lf,", &salary) == 1) {
+    
+    bool read(char*& name) {
+        //Deallocate previous memory if not nullptr
+        if (name != nullptr) {
+           delete[] name;
+           name = nullptr;
+       }
+
+        char temp[128];
+        if (fscanf(fptr, "%127[^\n]\n", temp) == 1) 
+        {
+            // Explicitly add a null terminator
+            temp[strlen(temp)] = '\0';
+
+            name = new char[strlen(temp) + 1];
+            strcpy(name, temp);
             return true;
         }
         return false;

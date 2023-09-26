@@ -17,6 +17,7 @@ namespace sdds {
     bool read(char*& name);
     bool read(int& empNo);
     bool read(double& salary);
+    
 }
 
 #endif // !SDDS_FILE_H_

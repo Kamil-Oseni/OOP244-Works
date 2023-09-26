@@ -5,12 +5,15 @@
 
 //I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 
-
 #define _CRT_SECURE_NO_WARNINGS
-#include "Population.h"
-#include "File.h"
 #include <iostream>
 #include <cstring>
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm> 
+#include "Population.h"
+#include "File.h"
+
 
 namespace sdds {
     // Define global variables
@@ -22,7 +25,6 @@ namespace sdds {
     bool startsWith(const char* cstring, const char* subString) {
         return strncmp(cstring, subString, strlen(subString)) == 0;
     }
-
 
     // Function to get a postal code from user input
     bool getPostalCode(char* postal_code_prefix) {
@@ -41,7 +43,6 @@ namespace sdds {
 
     // Function to load population data from a file
     bool load(const char* filename, const char* partial_postal_code_prefix) {
-        closeFile();
         if (openFile(filename)) {
             const int maxRecords = noOfRecords();
             populationData = new Population[maxRecords];  // Allocate dynamic memory for population data
@@ -59,13 +60,14 @@ namespace sdds {
                         strcpy(populationData[matchCount].postalCode, postalCode);
                         populationData[matchCount].population = population;
                         matchCount++;
-                    }
+                    } 
                 }
             }
 
             populationCount = matchCount;
-
+            closeFile();
             return true;
+            
         }
         else {
             std::cerr << "Could not open data file: " << filename << std::endl;
@@ -73,10 +75,20 @@ namespace sdds {
         }
     }
 
-    // Function to display population data
+        
+   // Function to display population data sorted by population and postal code
     void display() {
         std::cout << "Postal Code: population" << std::endl;
         std::cout << "-------------------------" << std::endl;
+
+        // Sort populationData using a custom comparison function
+        std::sort(populationData, populationData + populationCount, [](const Population& a, const Population& b) {
+            if (a.population != b.population) {
+                return a.population < b.population;  // Sort by population in ascending order
+            }
+            return strcmp(a.postalCode, b.postalCode) < 0;  // Sort by postal code in ascending alphabetical order
+            });
+
         int totalPopulation = 0;
         for (int i = 0; i < populationCount; i++) {
             std::cout << i + 1 << "- " << populationData[i].postalCode << ":  " << populationData[i].population << std::endl;
@@ -86,11 +98,17 @@ namespace sdds {
         std::cout << "Population of the listed areas: " << totalPopulation << "\n" << std::endl;
     }
 
+
+
     // Function to deallocate memory used for population data
     void deallocateMemory() {
         for (int i = 0; i < populationCount; i++) {
             delete[] populationData[i].postalCode;
         }
+
         delete[] populationData;  // Deallocate the array of population data
+        populationData = nullptr; // Set the pointer to null to avoid accessing freed memory
+        populationCount = 0;      // Reset the population count
+
     }
 }

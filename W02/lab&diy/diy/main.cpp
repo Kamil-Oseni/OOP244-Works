@@ -18,7 +18,7 @@ using namespace sdds;
 int main() {
     char code[4]{};
     while (getPostalCode(code)) {
-        if (load("PCpopulations.csv", code)) {
+        if (load("PCpopulationsComplete.csv", code)) {
             display();
         }
         deallocateMemory();
