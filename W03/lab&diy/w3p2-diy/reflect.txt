@@ -1,0 +1,21 @@
+/*
+*****************************************************************************
+                              reflect.txt
+Full Name  : Oluwaseun Kamil Oseni
+Student ID#: 168216216
+Email      : ooseni2@myseneca.ca
+Date of completion    : 02 Oct 2023
+
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+*****************************************************************************
+*/
+
+Other than having issues with the load and transfer functions, the things I learned and utilized this week were:
+
+1. Function Overloading-I am growing my skills in function overloading .just like in the functions  void set(constchar*trainName);void set(int noOfPassengers, int departure); 
+void set(const char* trainName, int noOfPassengers, int departure); Where every function is called in a different way.
+
+2. Member functions: I have learned how to use member functions with the help of the scope resolution operator. Using the private and public member functions I can say it helps organize code logically, 
+Member functions can be reused across different parts of the program and Member functions provide controlled access to the internal state of an object.
+
+3. Privacy: I have learned the importance of making variables and functions private and protected because it ensures proper encapsulation and controlling access to the internal components of a class.
