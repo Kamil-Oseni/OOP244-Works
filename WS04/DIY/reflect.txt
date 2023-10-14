@@ -1,0 +1,35 @@
+     
+//==============================================
+// Name:           Oluwaseun Kamil Oseni
+// Email:          ooseni2@myseneca.ca
+// Student Number: 168216216
+//==============================================
+
+In summary, the topics I learned in this week’s workshop are:
+	1.	Constructors
+	2.	Destructors
+	3.	The “this” keyword
+		
+	1.	Some things I learned about constructors are:
+		a.	A constructor is a special member function that is automatically called when an object of a class is created. 
+			It is used to initialize the members and perform any setup tasks necessary for the object to be in a valid and usable state.
+		
+		b.	Constructors have the same name as the class and do not have a return.
+
+		c.	You can have multiple constructors for a class, which is known as constructor overloading. This allows you to create objects with different initializations.
+
+		d.	If you don't define a constructor explicitly, a default constructor with no parameters is provided that initializes the members to default values which are 0 for integer types and null for pointers.
+
+
+	2.	Things I learned about destructors are:
+		a.	A destructor is another special member function that is automatically called when an object goes out of scope or is explicitly deleted. 
+			It is used to clean up resources held by the object, such as a dynamically allocated memory.
+
+		b.	Destructors also have the same name as the class but with a tilde (~) prefix and do not have any parameters or return type.
+
+
+	3.	About the “this” keyword, I understood that it is a special pointer that helps a program keep track of which object it is currently working with when dealing with multiple objects of the same type.
+
+		An analogy that made me properly understand how it works is: “Imagine you have a group of toy cars, and each car has a name and can do things like move or make a sound. When you want to tell one of the cars to do 
+		something, you need to be clear about which car you're talking to, especially if they all have the same name. For example, if you have a bunch of cars and you want to tell one car to honk its horn, you'd say, 
+		"Car, honk your horn." The "this" keyword helps the program understand that you mean the car you're currently working with, not some other car.”
