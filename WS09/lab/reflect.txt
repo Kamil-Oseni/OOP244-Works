@@ -1,0 +1,15 @@
+// Name: Oluwaseun Kamil Oseni                
+// Date: 11/25/2023            
+// ID: 168216216			
+// Email:ooseni2@myseneca.ca
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+WORKSHOP 9
+----------
+From the workshop and milestone,
+I learnt more about how virtual destructors work and how important they are in memory management as I had a lot of memory leaks. I also learnt more about inheritance, 
+how copy constructors,copy assignment, and destructors work in an inheritance hierarchy.
+
+Off this week's topic, While studying I ended up understanding how bubble sort algorithm works, after the finals, I will learn more algorithms and possibly take on a personal C++ project.
