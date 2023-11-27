@@ -10,15 +10,15 @@ namespace sdds {
 	class Graduate : public Student
 	{
 	private:
-		char* m_supervisor;
-		char* m_thesis;
+		char* m_supervisor{};
+		char* m_thesis{};
 		
 		void setEmpty();
 		void setThesis(const char* title);
 		void setSupervisor(const char* supervisor);
 
 	public:
-		Graduate();
+		Graduate() = default;
 		Graduate(const char* name, int age, const char* thesis, const char* supervisor);
 
 		virtual ~Graduate();
