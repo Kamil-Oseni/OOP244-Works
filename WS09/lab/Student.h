@@ -9,14 +9,12 @@ namespace sdds {
 	class Student
 	{
 	private:
-		char* m_name;
-		int m_age;
-
-
+		char* m_name{};
+		int m_age{};
 	public:
 		void init(const char* name, int age);
 				
-		Student();
+		Student() = default;
 		Student(const char* name, int age);
 
 		Student(const Student& original);
@@ -24,7 +22,6 @@ namespace sdds {
 		virtual ~Student();
 
 		void display()const;
-	
 
 	};
 	

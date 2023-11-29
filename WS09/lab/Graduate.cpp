@@ -34,16 +34,11 @@ namespace sdds
 			m_supervisor = nullptr; // Only set m_supervisor to nullptr
 		}
 	}
-	Graduate::Graduate() : Student() {
-		setEmpty();
-	}
 
 	Graduate::Graduate(const char* name, int age, const char* thesis, const char* supervisor) : Student(name, age)
 	{
-		setEmpty();
 		setThesis(thesis);
 		setSupervisor(supervisor);
-
 	}
 	Graduate::~Graduate()
 	{
@@ -51,7 +46,6 @@ namespace sdds
 		delete[]m_supervisor;
 	}
 	Graduate::Graduate(const Graduate& original) : Student(original) {
-		setEmpty();
 		*this = original;
 	}
 	Graduate& Graduate::operator=(const Graduate& original)

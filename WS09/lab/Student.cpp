@@ -9,17 +9,16 @@
 namespace sdds {
 	void Student::init(const char* name, int age)
 	{
-		m_name = new char[strlen(name) + 1];
-		strcpy(m_name, name);
-		m_age = age;
+		if (name) {
+			m_name = new char[strlen(name) + 1];
+			strcpy(m_name, name);
+			m_age = age;
+		}
 	}
-	Student::Student() : m_name(nullptr), m_age(0){}
 
 	Student::Student(const char* name, int age)
 	{
-		m_age = age;
-		m_name = new char[strlen(name) + 1];
-		strcpy(m_name, name);
+		init(name, age);
 	}
 
 	Student::Student(const Student& original)
@@ -31,6 +30,7 @@ namespace sdds {
 	{
 		if (this != &original) {
 			delete[] m_name;
+			m_name = nullptr;
 			init(original.m_name, original.m_age);
 		}
 		return *this;
