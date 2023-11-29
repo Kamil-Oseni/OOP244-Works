@@ -1,0 +1,22 @@
+// Name: Oluwaseun Kamil Oseni                
+// Date: 11/09/2023            
+// ID: 168216216			
+// Email:ooseni2@myseneca.ca
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Okay, this week was very long and productive as I took approximately 7 days to deep study OOP from scratch after failing the midterms.
+I binged YouTube videos, read study notes, and reviewed class documents.
+
+After my review, I finally understand perfectly the concepts of: 
+1. Operator overloading
+2. Lazy evaluation
+3. Different ways to initialize
+4. Initializing constructors with the member initializer list
+5. Inheritance
+
+I still need more time to study Virtual functions and to perfect how to use copy constructors and assignments.
+Also, I still get confused by how and when to use "const" and "this".
+
+About the workshop and milestone this week,
+This is the first time I'll really do a workshop with very little external research and it felt fairly simple. I guess the midterms woke me up.

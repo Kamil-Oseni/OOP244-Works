@@ -1,0 +1,19 @@
+//I have done all the coding by myself and only copied the code my professor provided to complete my workshops and assignments.
+//Oluwaseun Kamil Oseni
+//ID: 168216216
+//Email: ooseni2@myseneca.ca
+//Date 11/03/2023
+-----------------------------------------------------------------------------------
+From the workshop and milestone,
+
+1. I have understood the purpose of using constructors in a class. For instances of a class we created we need to have a default constructor so we can be able to overload a constructor with which we 
+assign values based on given criteria. Also, since it is used to assign values it does not return any value.
+
+2. Rule of three has to do with the Destructor, copy constructor, and copy Assignment Operator. We use rule 3 from my observation in both ms1 and workshop 6 when we are dealing with resources. 
+The function of the copy constructor is to call the copy assignment operator which copies one object to another without deleting the previously created object. When doing this I realized a const object
+is passed to the copy constructor so that the already created object is not deleted. 
+
+The destructor helps to delete any dynamically allocated memory to prevent memory leaks. Anywhere we use the copy constructor we need to make sure we have the copy assignment operator and the destructor. 
+
+3. Furthermore, IO operators, like istream and ostream being part of the iostream, are fundamental to interacting with data in C++. Overloading extraction and insertion operators for I/O using iostream 
+enhances the usability of custom classes, making it seamless to input and output data in a user-friendly format.

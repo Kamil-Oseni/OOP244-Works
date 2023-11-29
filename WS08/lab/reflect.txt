@@ -1,0 +1,63 @@
+// Name: Oluwaseun Kamil Oseni                
+// Date: 11/09/2023            
+// ID: 168216216			
+// Email:ooseni2@myseneca.ca
+// I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+WORKSHOP 6
+----------
+From the workshop and milestone,
+
+1. I have understood the purpose of using constructors in a class. For instances of a class we created we need to have a default constructor so we can be able 
+to overload a constructor with which we assign values based on given criteria. Also, since it is used to assign values it does not return any value.
+
+2. Rule of three has to do with the Destructor, copy constructor, and copy Assignment Operator. We use rule 3 from my observation in both ms1 and workshop 6 
+when we are dealing with resources. The function of the copy constructor is to call the copy assignment operator which copies one object to another without 
+deleting the previously created object. When doing this I realized a const object is passed to the copy constructor so that the already created object is not deleted. 
+
+The destructor helps to delete any dynamically allocated memory to prevent memory leaks. Anywhere we use the copy constructor we need to make sure we have the copy 
+assignment operator and the destructor. 
+
+3. Furthermore, IO operators, like istream and ostream being part of the iostream, are fundamental to interacting with data in C++. Overloading extraction and insertion 
+operators for I/O using iostream enhances the usability of custom classes, making it seamless to input and output data in a user-friendly format.
+
+
+
+
+WORKSHOP 7
+----------
+
+Okay, this week was very long and productive as I took approximately 7 days to deep study OOP from scratch after failing the midterms.
+I binged YouTube videos, read study notes, and reviewed class documents.
+
+After my review, I finally understand perfectly the concepts of: 
+1. Operator overloading
+2. Lazy evaluation
+3. Different ways to initialize
+4. Initializing constructors with the member initializer list
+5. Inheritance
+
+I still need more time to study Virtual functions and to perfect how to use copy constructors and assignments.
+Also, I still get confused by how and when to use "const" and "this".
+
+About the workshop and milestone this week,
+This is the first time I'll really do a workshop without any external help or explanation and it felt fairly simple. I guess the midterms woke me up.
+
+
+
+
+WORKSHOP 8
+----------
+After studying my notes, the workshop and milestone I understand the following concepts:
+
+1. Inheritance - which is like passing down traits in a family, it allows classes to share attributes and behaviors, creating a hierarchy where a new class 
+can build upon an existing one.
+
+2. Virtual functions - which are fascinating because they're like placeholders that can be redefined in subclasses. They provide a way for different classes 
+to have their unique implementation of the same function, allowing for diverse behavior while maintaining a common interface. This was my introduction to polymorphism 
+and that's what makes polymorphism so powerful, the ability for objects to be treated similarly based on their shared methods.
+
+I'll have to do a revision on these concepts to further understand and get used to them.
